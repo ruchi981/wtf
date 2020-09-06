@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><%= article.title %></h2>
+    <h2>written by <%= article.author %></h2>
+    
+    <h6><%= article.description %></h2>
+    
+
+    <h3><a href="/articles/edit/<%=article._id %>" class="btn btn-primary">Edit Article</h3>
+
+    <h3><a href="/articles/delete/<%=article._id %>" class="btn btn-primary">Delete Article</h3>
+    
+      
+    
+</body>
+</html>

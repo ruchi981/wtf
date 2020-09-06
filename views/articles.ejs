@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Articles for u</h1>
+    <h3>Amazing articles to read and create your own</h3>
+    <h5><a href="/articles/new">Create a new Article</a></h5>
+
+<div>
+    <% articles.forEach(function(article){ %>
+        <h2><%= article.title %></a></h2>
+        <h4>Written by:<%= article.author %></h2>
+        <h6><%= article.description %></h2>
+
+            <a href="/articles/read/<%=article._id %>" class="btn btn-primary">Read More</a>
+  <%  }) %>
+
+ 
+        </div>
+
+        
+</body>
+</html>
+
+
+   
